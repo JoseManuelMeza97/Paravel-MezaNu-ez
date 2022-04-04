@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagenes utilizadas/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css.css" />
+    <title>Paravel</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header class="border">
+
+            <nav class="formulario-busqueda">
+                <div>
+                    <a href="./index.html"> <img src="./imagenes utilizadas/logo.png" class="nav_imgLogo"> </a>
+                </div>
+                <ul>
+                    <li><input type="text" name="busqueda" placeholder="     Búsqueda" class="nav__busqueda">&#128269;
+                    </li>
+
+                    <li><a href="./productos.html">Productos</a>
+                        <ul>
+                            <!-- Esta lista de botones está pensada para redirigir a la pantalla de productos y aplicar un filtro de búsqueda -->
+                            <li><a href="./productos.html">Personalizables</a></li>
+                            <li><a href="./productos.html"> Decorativos</a></li>
+                            <li><a href="./productos.html">Regalos</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="./eventos.html">Eventos</a>
+                        <ul>
+                            <li><a href="./eventos.html">Servicio de globos</a></li>
+                            <li><a href="./eventos.html"> Servicio decorativos de mesas</a></li>
+                            <li><a href="./eventos.html">Servicio de estaciones de snack</a></li>
+                            <li><a href="./eventos.html">Paquetes populaes</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li><a href="./quienes somos.html">¿Quienes somos?</a></li>
+
+                    <li><a href="./contacto.html">Contacto</a></li>
+
+                    <li><a href="./iniciar sesion.html">Mi cuenta</a>
+                        <ul>
+                            <li> <a href="./iniciar sesion.html">Inicio de sesión</a></li>
+                            <li> <a href="./registro.html">Registro</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <aside class="border"> <img src="imagenes utilizadas/imagen1.jpg" class="aside__image"> </aside>
+        <section id="carrusel" class="border">
+
+            <div>
+                <h1>¡Bienvenido a Paravel!</h1>
+                <h2>Aquí encontrarás todo lo que necesitas para tus eventos</h2>
+            </div>
+
+            <div class="secciones__main">
+                <!-- Esta sección de imagenes está pensada para ser un carrusel -->
+                <img src="imagenes utilizadas/imagen1.jpg" class="main__images">
+                <img src="imagenes utilizadas/eventos.jpg" class="main__images">
+                <img src="imagenes utilizadas/productos.jpg" class="main__images">
+                <img src="imagenes utilizadas/imagen4.jpg" class="main__images">
+
+            </div>
+        </section>
+
+        <section id="imagebutons" class="border">
+
+            <section class="secciones__main">
+                <a href="./galeria.html"><img src="imagenes utilizadas/galería.png"
+                        class="main__sectionImageButton"></a>
+                <!-- Estos dos botones están pensados para redirigir a la pantalla de productos y aplicar un filtro de búsqueda -->
+                <a href="./productos.html"><img src="imagenes utilizadas/promociones.png"
+                        class="main__sectionImageButton"></a>
+                <a href="./productos.html"><img src="imagenes utilizadas/productos de temporada.png"
+                        class="main__sectionImageButton"></a>
+            </section>
+
+        </section>
+
+
+        <footer class="border">
+
+            <div>
+                <section class="formulario-contacto">
+                    <h4>Suscríbete a nuestras promociones</h4>
+                    <form action="a" method="post" enctype="application/x-www-form-urlencoded"></form>
+                    <div class="formulario-contacto">
+                        <label for="Tu correo electrónico"> Tu correo electrónico </label>
+                        <input type="text" name="nombre" placeholder="    Ingresa tu correo"
+                            class="footer__correoInput"> &#128231;
+                    </div>
+                </section>
+            </div>
+
+            <div>
+                <h4>Dirección</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis labore totam animi cum
+                    asldkajdkasldkjldsk</p>
+
+            </div>
+            <div>
+                <h4>Encuéntranos en</h4>
+                <h5>Número de telefono (52+ 6623549860) &phone;</h5>
+                <div class="footer_icons">
+                    <a href="http://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="http:///www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
