@@ -34,3 +34,25 @@ ul li:hover ul a:hover {
 li>ul>li>a {
     background-color: white;
 }
+
+.custom-img {
+    height: 80vh;
+    width: auto;
+    margin: 5vh 0vh;
+}
+
+nav {
+    height: 10vh;
+}
+
+#carouselExampleIndicators {
+    height: 90vh;
+}
+
+@media (max-width: 800px)  { 
+    .custom-img {
+        height: 40vh;
+        width: auto;
+        margin: 20vh 0vh;
+    }
+}
