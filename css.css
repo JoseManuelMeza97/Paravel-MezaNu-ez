@@ -4,35 +4,41 @@ body {
 
 
 nav {
-    background-image: linear-gradient(to bottom, antiquewhite, white);
-    height: 130px;
+    background-image: linear-gradient(to bottom, rgb(235, 158, 235), antiquewhite);
+    height: 15vh;
 }
-
 
 li>a:hover {
     background-color: #edb7e6ec;
-}
-
-ul ul {
-    width: 100%;
-    position: absolute;
-    display: none;
-}
-
-ul ul li {
-    width: 200px;
-}
-
-ul li:hover ul {
-    display: block;
 }
 
 ul li:hover ul a:hover {
     background-color: #edb7e6ec;
 }
 
-li>ul>li>a {
-    background-color: white;
+.navbar-brand {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    color: navy;
+
+}
+
+.nav-item {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.body-title {
+    text-align: center;
+    padding-top: 3%;
+    color: navy;
+}
+
+.body-text {
+    text-align: center;
+    color: navy;
+    font-size: 20px;
 }
 
 .custom-img {
@@ -41,18 +47,76 @@ li>ul>li>a {
     margin: 5vh 0vh;
 }
 
-nav {
-    height: 10vh;
-}
-
 #carouselExampleIndicators {
     height: 90vh;
 }
 
-@media (max-width: 800px)  { 
+@media (max-width: 800px) {
     .custom-img {
         height: 40vh;
         width: auto;
         margin: 20vh 0vh;
     }
+}
+
+
+.card-images {
+    width: 270px;
+    height: 350px;
+}
+
+.card-background {
+    background-image: linear-gradient(rgb(216, 103, 231), pink);
+}
+
+.card-text {
+    text-decoration: none;
+    text-align: justify;
+    color: white;
+
+}
+
+.card-title {
+    text-align: center;
+    text-decoration: none;
+    color: white
+}
+
+.footer-design {
+    background-image: linear-gradient(to bottom, rgb(209, 133, 228), rgb(248, 156, 122));
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: center;
+}
+
+.products-buttonsDesign {
+    background-color: rgb(218, 129, 218);
+
+}
+
+a>button:hover {
+    background-color: rgb(241, 133, 193);
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+        "sidebar products products"
+        "sidebar products products"
+        "none products products";
+
+    grid-template-rows: 2fr 1fr auto;
+    grid-template-columns: 2fr 1fr auto;
+}
+
+.border {
+    border: 15px solid black;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+section#productos {
+    grid-area: products;
 }
