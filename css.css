@@ -4,16 +4,21 @@ body {
 
 
 nav {
-    background-image: linear-gradient(to bottom, rgb(235, 158, 235), antiquewhite);
+    background-image: linear-gradient(to bottom, rgb(235, 158, 235), rgb(248, 198, 248), rgb(230, 211, 228));
     height: 15vh;
 }
 
 li>a:hover {
-    background-color: #edb7e6ec;
+    background-color: #da84ceec;
+
 }
 
 ul li:hover ul a:hover {
     background-color: #edb7e6ec;
+}
+
+.textFontNoto {
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .navbar-brand {
@@ -25,9 +30,15 @@ ul li:hover ul a:hover {
 
 .nav-item {
     text-decoration: none;
+
     font-family: 'Noto Sans', sans-serif;
 }
 
+.nav-link {
+    text-decoration: none;
+    color: navy;
+
+}
 
 .body-title {
     text-align: center;
@@ -59,6 +70,11 @@ ul li:hover ul a:hover {
     }
 }
 
+.carousel-textDesing {
+    color: rgb(191, 71, 196);
+    font-weight: bolder;
+    background-color: rgb(238, 216, 233);
+}
 
 .card-images {
     width: 270px;
@@ -72,20 +88,18 @@ ul li:hover ul a:hover {
 .card-text {
     text-decoration: none;
     text-align: justify;
-    color: white;
+    color: navy;
 
 }
 
 .card-title {
     text-align: center;
     text-decoration: none;
-    color: white
+    color: navy;
 }
 
 .footer-design {
     background-image: linear-gradient(to bottom, rgb(209, 133, 228), rgb(248, 156, 122));
-    margin-left: 2%;
-    margin-right: 2%;
     text-align: center;
 }
 
@@ -98,6 +112,11 @@ a>button:hover {
     background-color: rgb(241, 133, 193);
 }
 
+.products-asideButtons:hover {
+    background-color: rgb(241, 133, 193);
+}
+
+
 #grid {
     display: grid;
     grid-template-areas:
@@ -105,18 +124,57 @@ a>button:hover {
         "sidebar products products"
         "none products products";
 
-    grid-template-rows: 2fr 1fr auto;
-    grid-template-columns: 2fr 1fr auto;
+    grid-template-rows: 20% 40% 40%;
+    grid-template-columns: 20% 40% 40%;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    height: 100vh;
+    margin: 3%;
 }
 
-.border {
-    border: 15px solid black;
-}
 
 aside {
     grid-area: sidebar;
+    background-image: linear-gradient(to bottom, rgb(209, 133, 228), rgb(248, 156, 122));
+    border-style: outset;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 section#productos {
     grid-area: products;
+    border-style: outset;
+    background-image: linear-gradient(to bottom, rgb(209, 133, 228), rgb(248, 156, 122));
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 65%;
+    grid-gap: 15px;
+}
+
+section#productos>div {
+    border-style: outset;
+    margin: 4%;
+
+}
+
+.productos-submenu {
+    text-align: center;
+}
+
+.products-cardsImages {
+    width: 100%;
+    height: 200px;
+}
+
+.products-cardBody {
+    background-color: rgb(238, 216, 233);
+    text-align: justify;
+    height: 100%;
+    padding: 3%;
+
+}
+
+.pagination {
+    display: flex;
+
 }
