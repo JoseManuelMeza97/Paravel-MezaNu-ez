@@ -8,6 +8,14 @@ nav {
     height: 15vh;
 }
 
+.navbar {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 9999;
+}
+
 li>a:hover {
     background-color: #da84ceec;
 
@@ -17,27 +25,32 @@ ul li:hover ul a:hover {
     background-color: #edb7e6ec;
 }
 
+a {
+    text-decoration: none;
+}
+
+.navbar-homeTitle {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    color: navy;
+}
+
+@media (max-width:1200px) {
+    .navbar-homeTitle {
+        display: none;
+    }
+
+}
+
 .textFontNoto {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.navbar-brand {
-    text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
+.nav-sectionsText {
+    font-size: 'Noto Sans', sans-serif;
     color: navy;
-
-}
-
-.nav-item {
-    text-decoration: none;
-
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: navy;
-
+    font-weight: 600;
+    padding-right: 10px;
 }
 
 .body-title {
@@ -70,15 +83,34 @@ ul li:hover ul a:hover {
     }
 }
 
-.carousel-textDesing {
-    color: rgb(191, 71, 196);
+.carousel-titleTextDesing {
     font-weight: bolder;
-    background-color: rgb(238, 216, 233);
 }
+
+@media (max-width: 800px) {
+    .carousel-titleTextDesing {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:800px) {
+    .carousel-textDesing {
+        font-size: 12px;
+    }
+}
+
 
 .card-images {
     width: 270px;
     height: 350px;
+
+}
+
+@media (max-width:800px) {
+    .card-images {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .card-background {
@@ -88,15 +120,20 @@ ul li:hover ul a:hover {
 .card-text {
     text-decoration: none;
     text-align: justify;
+    font-size: 20px;
     color: navy;
-
+    padding-top: 20px;
 }
 
-.card-title {
+.card-titleDesing {
     text-align: center;
-    text-decoration: none;
     color: navy;
+    font-size: 30px;
+    background-color: rgb(247, 197, 247);
+
+
 }
+
 
 .footer-design {
     background-image: linear-gradient(to bottom, rgb(209, 133, 228), rgb(248, 156, 122));
@@ -105,11 +142,25 @@ ul li:hover ul a:hover {
 
 .products-buttonsDesign {
     background-color: rgb(218, 129, 218);
-
 }
+
+@media (min-width:800px) {
+    .products-buttonsDesign {
+        margin: auto;
+        padding: auto auto;
+        width: 220px;
+        height: 50px;
+    }
+}
+
+
 
 a>button:hover {
     background-color: rgb(241, 133, 193);
+}
+
+.products-asideButtons {
+    background-color: rgb(218, 129, 218);
 }
 
 .products-asideButtons:hover {
@@ -128,7 +179,7 @@ a>button:hover {
     grid-template-columns: 20% 40% 40%;
     grid-column-gap: 10px;
     grid-row-gap: 15px;
-    height: 100vh;
+    height: fit-content;
     margin: 3%;
 }
 
@@ -138,6 +189,8 @@ aside {
     background-image: linear-gradient(to bottom, rgb(209, 133, 228), rgb(248, 156, 122));
     border-style: outset;
     font-family: 'Noto Sans', sans-serif;
+    height: fit-content;
+    padding-bottom: 5%;
 }
 
 section#productos {
@@ -146,8 +199,7 @@ section#productos {
     background-image: linear-gradient(to bottom, rgb(209, 133, 228), rgb(248, 156, 122));
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 65%;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-gap: 15px;
 }
 
@@ -175,6 +227,20 @@ section#productos>div {
 }
 
 .pagination {
-    display: flex;
+    padding-left: 13%;
+    padding-top: 20%;
+}
 
+.products-asideMenuButton {
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+}
+
+@media (max-width:1200px) {
+    .products-asideMenuButton {
+        display: block;
+        width: 3rem;
+
+    }
 }

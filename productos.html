@@ -18,25 +18,29 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg nav-textDesign">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="imagenes utilizadas/logo.png">
+                <h8 class="navbar-homeTitle">Paravel</h8>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <a class="navbar-brand" href="./index.html"><img src="imagenes utilizadas/logo.png"> Paravel </a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
-                        <button class="btn btn-outline-default " type="submit">&#128269;</button>
+                        <button class="btn btn-outline-default " type="submit"><i class="fas fa-search"></i></button>
                     </form>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./productos.html" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Productos
+                            <h7 class="nav-sectionsText">Productos</h7>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="./productos.html">Personalizables</a></li>
@@ -48,7 +52,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Servicios
+                            <h7 class="nav-sectionsText">Servicios</h7>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Globos</a></li>
@@ -59,18 +63,22 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">¿Quiénes somos?</a>
+                        <a class="nav-link" href="#">
+                            <h7 class="nav-sectionsText">¿Quiénes somos?</h7>
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">
+                            <h7 class="nav-sectionsText">Contacto</h7>
+                        </a>
                     </li>
 
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Mi cuenta
+                            <h7 class="nav-sectionsText">Mi cuenta</h7>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Inicio de sesión</a></li>
@@ -82,75 +90,87 @@
         </div>
     </nav>
 
+
+    <br>
     <div>
-        <h2 class="body-title">¡Sección de Productos!</h2>
-        <p class="body-text">Aquí encontrarás todos los productos lo que necesitas para tus eventos</p>
+        <h2 class="body-title mt-5">¡Sección de Productos!</h2>
+        <p class="body-text p-4">Aquí encontrarás todos los productos lo que necesitas para tus eventos</p>
     </div>
 
+
     <div class="container text-center">
-        <a href="#"><button type="button" class="btn btn-lg products-buttonsDesign">Personalizables</button></a>
-        <a href="#"><button type="button" class="btn btn-lg products-buttonsDesign">Decorativos</button></a>
-        <a href="#"><button type="button" class="btn btn-lg products-buttonsDesign">Regalos</button></a>
+        <a href="#"><button type="button" class="btn products-buttonsDesign">Personalizables</button></a>
+        <a href="#"><button type="button" class="btn products-buttonsDesign">Decorativos</button></a>
+        <a href="#"><button type="button" class="btn products-buttonsDesign">Regalos</button></a>
     </div>
+
+
 
     <div id="grid">
 
-        <aside class="flex">
+        <aside class="flex" id="products-sidebar">
 
-            <div class="productos-submenu">
-                <form action="a" method="post" enctype="application/x-www-form-urlencoded">
-                    <h5 class="p-3"> Menú</h5>
-                    <div>
-                        <label for="productos">Producto de mayor interes</label>
-                        <select name="productos">
-                            <option value="" hidden>Selecciona una opción</option>
-                            <option value="Objetos personalizables">Objetos personalizables</option>
-                            <option value="Decoración de eventos">Decoración de eventos</option>
-                            <option value="regalos">Regalos</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div>
+            <div class="container-fluid">
 
+                <button class="btn button products-asideButtons products-asideMenuButton" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#sidebarcollapse" aria-expanded="false"
+                    aria-controls="sidebarcollapse">
+                    <h5 class="p-3 text-center"> Menú</h5>
+                </button>
+                </p>
+
+                <div class="productos-submenu navbar-collapse" id="sidebarcollapse">
+
+                    <form action="a" method="post" enctype="application/x-www-form-urlencoded">
                         <div>
-                            <label for="productos">Lista de productos</label>
+                            <label for="productos">Producto de mayor interes</label>
                             <select name="productos">
                                 <option value="" hidden>Selecciona una opción</option>
-                                <option value="termos">Termos</option>
-                                <option value="cake toppers">Cake toppers</option>
-                                <option value="camisas">Camisas</option>
-                                <option value="globos">Globos</option>
-                                <option value="manteles">Manteles </option>
+                                <option value="Objetos personalizables">Objetos personalizables</option>
+                                <option value="Decoración de eventos">Decoración de eventos</option>
+                                <option value="regalos">Regalos</option>
                             </select>
                         </div>
                         <br>
-                        <div class="formulario-submenu-productos"></div>
-                        <label>Chico </label>
-                        <input type="radio" name="medida" value="Chico" />
-                        <label>Mediano</label>
-                        <input type="radio" name="medida" value="Mediano" />
-                        <label>Grande </label>
-                        <input type="radio" name="medida" value="Grande" />
-                        <br>
-                        <br>
                         <div>
-                            <label name="promociones">Productos en promoción</label>
-                            <input id="promociones" type="checkbox" name="promociones" value="1" />
-                        </div>
-                        <div>
-                            <label name="detemporada">Productos de temporada</label>
-                            <input id="detemporada" type="checkbox" name="detemporada" value="1" />
-                        </div>
-                        <br>
-                        <div>
-                            <input type="submit" value="Buscar"
-                                class="button products-buttonsDesign products-asideButtons" />
-                            <input type="reset" value="Limpiar formulario"
-                                class="button products-buttonsDesign products-asideButtons" />
-                        </div>
-                    </div>
-            </div>
 
+                            <div>
+                                <label for="productos">Lista de productos</label>
+                                <select name="productos">
+                                    <option value="" hidden>Selecciona una opción</option>
+                                    <option value="termos">Termos</option>
+                                    <option value="cake toppers">Cake toppers</option>
+                                    <option value="camisas">Camisas</option>
+                                    <option value="globos">Globos</option>
+                                    <option value="manteles">Manteles </option>
+                                </select>
+                            </div>
+                            <br>
+                            <div class="formulario-submenu-productos"></div>
+                            <label>Chico </label>
+                            <input type="radio" name="medida" value="Chico" />
+                            <label>Mediano</label>
+                            <input type="radio" name="medida" value="Mediano" />
+                            <label>Grande </label>
+                            <input type="radio" name="medida" value="Grande" />
+                            <br>
+                            <br>
+                            <div>
+                                <label name="promociones">Productos en promoción</label>
+                                <input id="promociones" type="checkbox" name="promociones" value="1" />
+                            </div>
+                            <div>
+                                <label name="detemporada">Productos de temporada</label>
+                                <input id="detemporada" type="checkbox" name="detemporada" value="1" />
+                            </div>
+                            <br>
+                            <div>
+                                <input type="submit" value="Buscar" class="button products-asideButtons" />
+                                <input type="reset" value="Limpiar formulario" class="button products-asideButtons" />
+                            </div>
+                        </div>
+                </div>
+            </div>
 
         </aside>
 
@@ -200,6 +220,7 @@
                 </div>
             </div>
 
+            <section class="display-none"></section>
 
             <section aria-label="pagination">
                 <ul class="pagination">
@@ -214,9 +235,6 @@
 
 
     </div>
-
-
-
 
 
     <footer>
